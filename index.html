@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="asset/image/logg.png" alt="Logo"></a><h1>NEWS LINE</h1>
+        </div>
+        <nav>
+
+
+
+    <!-- Live Indicator -->
+    <div class="live-indicator" id="live-indicator">
+        <span class="live-text">LIVE</span>
+        <span class="live-dot"></span>
+      </div>
+      
+  
+    <!-- Toggle Button for Demo -->
+    <div class="toggle-live">
+      <button onclick="toggleLive()">Live </button>
+    </div>
+  
+
+
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Tech</a></li>
+                <li><a href="#">Lifestyle</a></li>
+                <li><a href="#">Travel</a></li>
+                <li>
+                    <a href="#">Categories</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Tech</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Travel</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>🔍</button>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="carousel">
+            <div class="slide active">
+                <img src="asset/image/demo1.jpg" alt="Featured Post 1">
+                <div class="caption">
+                    <h2>Top Stories</h2>
+                    <p>INEC Declares APC’s Okpebholo Winner Of Edo Gov Election</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="asset/image/demo3.jpg" alt="Featured Post 1">
+                <div class="caption">
+                    <h2>Top Stories</h2>
+                    <p>Obaseki Appeals For Calm Over Edo Gov Election Result</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="cta">
+            <a href="#" class="cta-button">Explore Categories</a>
+        </div>
+    </section>
+
+
+
+
+
+    
+
+
+    <main>
+        <section class="latest-posts">
+            <h2>Latest Posts</h2>
+            <div class="post-grid">
+                <div class="post">
+                    <img src="asset/image/stud1.jpg" alt="Post 1">
+                    <h3>Top Stories</h3>
+                    <p class="meta">Posted on Jan 1, 2024 | Tech</p>
+                    <p class="excerpt">‘I Weep For Nigeria’s Democracy,’ Governor Fintiri Condemns Edo Election...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="post">
+                    <img src="asset/image/demo5.jpg" alt="Post 2">
+                    <h3>Top Stories</h3>
+                    <p class="meta">Posted on Jan 2, 2024 | Lifestyle</p>
+                    <p class="excerpt">Your Victory Is A Call To Service, Tinubu Tells Okpebholo ...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                
+                <div class="post">
+                    <img src="asset/image/demo6.jpg" alt="Post 2">
+                    <h3>Top Stories</h3>
+                    <p class="meta">Posted on Jan 2, 2024 | </p>
+                    <p class="excerpt">Tinubu Orders Crackdown On Cybercriminals, Transnational Car Thieves...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                
+                <div class="post">
+                    <img src="asset/image/demo1.jpg" alt="Post 2">
+                    <h3>Top Stories</h3>
+                    <p class="meta">Posted on Jan 2, 2024 | Lifestyle</p>
+                    <p class="excerpt">Edo Election: Review Results Before Announcement, PDP Tells INEC...</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <!-- Add more posts as needed -->
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+  <!-- Video Upload Section 
+  <section class="video-upload-section">
+    <h2>Upload a Video</h2>
+    <form id="video-upload-form">
+      <!-- Video File Upload 
+      <input type="file" id="video-upload" accept="video/*" required>
+
+ 
+
+      <!-- Upload Button 
+      <button type="button" onclick="uploadVideo()">Upload Video</button>
+    </form>
+
+    <!-- Video Preview 
+    <div class="video-preview" id="video-preview">
+      <h3>Diamond Platnumz ft P'square KIDOGO (Official Video)(0)_00</h3>
+      <p id="video-details"></p>
+      <video id="uploaded-video" controls></video>
+    </div>
+  </section>-->
+
+
+
+
+
+    <section class="categories-section">
+        <h2>Categories</h2>
+        <div class="categories-grid" id="categoriesGrid">
+            <div class="category">
+                <img src="asset/image/tec3.jpg" alt="Tech">
+                <h3>Tech</h3>
+            </div>
+            <div class="category">
+                <img src="asset/image/demo3.jpg" alt="Lifestyle">
+                <h3>Lifestyle</h3>
+            </div>
+            <div class="category">
+                <img src="asset/image/demo4.jpg" alt="Travel">
+                <h3>Travel</h3>
+            </div>
+            <div class="category">
+                <img src="asset/image/fr2.jpg" alt="Health">
+                <h3>Health</h3>
+            </div>
+            <!-- Add more categories as needed -->
+        </div>
+        <!-- Arrows for sliding on mobile -->
+        <div class="mobile-controls">
+            <button id="prevBtn">&#10094;</button>
+            <button id="nextBtn">&#10095;</button>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section class="featured-post">
+        <h2>Featured Post</h2>
+        <div class="featured-post-grid" id="featuredPostGrid">
+            <div class="post">
+                <img src="asset/image/demo1.jpg" alt="Post 1">
+                <h3>Post Title 1</h3>
+                <p>Short description of the post...</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="post">
+                <img src="asset/image/demo5.jpg" alt="Post 2">
+                <h3>Post Title 2</h3>
+                <p>Short description of the post...</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="post">
+                <img src="asset/image/demo3.jpg" alt="Post 3">
+                <h3>Post Title 3</h3>
+                <p>Short description of the post...</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <!-- Add more posts as needed -->
+        </div>
+        <!-- Arrows for sliding on mobile -->
+        <div class="mobile-controls">
+            <button id="prevBtn">&#10094;</button>
+            <button id="nextBtn">&#10095;</button>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="author-bio">
+            <img src="asset/image/guy4.jpg" alt="Author" class="author-img">
+            <p>Hi, I'm the author!</p>
+        </div>
+
+        <div class="newsletter">
+            <h3>Subscribe to our Newsletter</h3>
+            <form>
+                <input type="email" placeholder="Your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <div class="tags">
+            <h3>Popular Tags</h3>
+            <div class="tags-list">
+                <a href="#">Tech</a>
+                <a href="#">Lifestyle</a>
+                <a href="#">Travel</a>
+                <a href="#">Tech</a>
+
+                <!-- Add more tags as needed -->
+            </div>
+        </div>
+
+        <div class="social-links">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#" class="social-link" data-platform="Facebook"><img src="asset/image/download.png" alt="Facebook"></a>
+                <a href="#" class="social-link" data-platform="Twitter"><img src="asset/image/lo.png" alt="Twitter"></a>
+                <a href="#" class="social-link" data-platform="Instagram"><img src="asset/image/og.jpg" alt="Instagram"></a>
+            </div>
+        </div>
+    </aside>
+
+
+
+
+
+    
+
+
+
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+
+        <div class="social-media">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#" class="social-link" data-platform="Facebook"><img src="asset/image/download.png" alt="Facebook"></a>
+                <a href="#" class="social-link" data-platform="Twitter"><img src="asset/image/lo.png" alt="Twitter"></a>
+                <a href="#" class="social-link" data-platform="Instagram"><img src="asset/image/og.jpg" alt="Instagram"></a>
+            </div>
+        </div>
+
+        <div class="newsletter-footer">
+            <h3>Stay Updated</h3>
+            <form id="newsletterForm">
+                <input type="email" id="email" placeholder="Your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <p id="feedback-message"></p>
+        </div>
+    </footer>
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
